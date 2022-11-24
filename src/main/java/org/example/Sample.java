@@ -10,6 +10,11 @@ public class Sample {
         System.out.println(k);    //12
         //System.out.println("Pre increment of k is: " +k);
     }
-
-
 }
+
+// Object oriented principles:
+// 1. Encapsulation : Wrapping up of variables and methods. Class is an example of encapsulation
+// 2. Abstraction: Hiding of implementation, exposing only the interface
+
+// Interface: It contains only abstract methods and constants
+// Abstract Method: It will only have a declaration, no definition
