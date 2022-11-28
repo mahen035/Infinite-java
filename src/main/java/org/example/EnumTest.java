@@ -11,8 +11,12 @@ public class EnumTest {
         System.out.println(val);
         //Days day = Days.WEDNESDAY;
        // System.out.println(day);
-        for(Days day : Days.values()){
+        /*for(Days day : Days.values()){
             System.out.println(day);
-        }
+        }*/
+
+        Days[] days = Days.values();
+
+        System.out.println(days[2]);
     }
 }

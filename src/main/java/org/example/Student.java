@@ -42,6 +42,15 @@ public class Student {
     //Attributes
 
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studName='" + studName + '\'' +
+                ", rollNo=" + rollNo +
+                ", grade=" + grade +
+                '}';
+    }
+
     static String collegeName;
 
 

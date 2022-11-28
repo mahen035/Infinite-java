@@ -9,7 +9,7 @@ public class AccountTest {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Account Type");
         String accountType = sc.next();
-        Account account = AccountFactory.getAccount(accountType);
+        Account account = AccountFactory.getAccount(accountType); // Account account = new SavingAccount();
 
         System.out.println("Enter 1:Deposit 2:Withdraw");
         int choice = sc.nextInt();
