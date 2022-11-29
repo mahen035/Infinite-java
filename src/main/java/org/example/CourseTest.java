@@ -8,6 +8,8 @@ public class CourseTest {
         Course course3 = new Course(103, "HTML", 100);
         Course course4 = new Course(104, "JAVASCRIPT", 250);
         Course course5 = new Course(105, "CSS", 150);
+        int[] arr = new int[3];
+
 
         Course[] courses = {course1, course2, course3, course4, course5};
         boolean isCourseAvailable = false;
@@ -55,5 +57,8 @@ public class CourseTest {
 //3. Apply the logic
 
 // find average of 5 numbers:
-// find average age of 5 employees: age from employee
-//
+// Strings and Arrays
+// Array of objects
+// Pass by value, pass by reference
+
+//Tomorrow: Exception handling
