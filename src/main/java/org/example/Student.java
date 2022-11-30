@@ -1,14 +1,18 @@
 package org.example;
 
-public class Student {
+public class Student implements Cloneable{
 
-    Student(String studName, int rollNo, char grade){
+    public Student(String studName, int rollNo, char grade){
        this.studName = studName;
        this.rollNo = rollNo;
        this.grade = grade;
     }
 
-    Student(){
+    public Object clone() throws CloneNotSupportedException{
+        return super.clone();
+    }
+
+    public Student(){
 
     }
     private String studName;   // Instance variable
