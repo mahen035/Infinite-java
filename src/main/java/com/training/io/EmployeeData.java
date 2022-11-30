@@ -7,7 +7,6 @@ import java.io.IOException;
 
 public class EmployeeData {
 
-
     public static void main(String args[]) throws IOException {
         String line = "";
        // Employee[] empList = new Employee[5];
