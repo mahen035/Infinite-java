@@ -17,6 +17,7 @@ public class EmployeeData {
         BufferedReader reader = new BufferedReader(new FileReader("data.csv"));
         while((line = reader.readLine())!=null){
             employee = line.split(",");
+            //Read the String array and populate your Employee object
             empList[i] = new Employee(employee[0], employee[1], employee[2], Long.parseLong(employee[3]), Double.parseDouble(employee[4]), employee[5]);
             i++;
             /*System.out.println("Employee[FirstName = "+employee[0]+",LastName= "
