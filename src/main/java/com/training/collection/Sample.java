@@ -18,12 +18,14 @@ public class Sample {
             System.out.println(name);
         }
 
-        Set<Student> students = new TreeSet<>();
+        List<Student> students = new ArrayList<>();
 
         students.add(new Student("Adam", 23, 'A'));
         students.add(new Student("Pete", 21, 'B'));
         students.add(new Student("Katie", 22, 'A'));
         students.add(new Student("Brian", 24, 'A'));
+
+        Collections.sort(students);
 
         for(Student student:students){
             System.out.println(student);
