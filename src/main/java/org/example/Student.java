@@ -1,6 +1,8 @@
 package org.example;
 
-public class Student implements Cloneable{
+import java.util.Objects;
+
+public class Student implements Cloneable, Comparable<Student>{
 
     public Student(String studName, int rollNo, char grade){
        this.studName = studName;
@@ -47,6 +49,19 @@ public class Student implements Cloneable{
 
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return rollNo == student.rollNo && grade == student.grade && Objects.equals(studName, student.studName);
+    }
+
+    @Override
+    public int hashCode() {
+       return this.rollNo;
+    }
+
+    @Override
     public String toString() {
         return "Student{" +
                 "studName='" + studName + '\'' +
@@ -57,7 +72,19 @@ public class Student implements Cloneable{
 
     static String collegeName;
 
-
+    @Override
+    public int compareTo(Student o) {
+       // return this.studName.compareTo(o.getStudName());
+        if(this.rollNo > o.getRollNo()){
+            return 1;
+        }
+        else if(this.rollNo < o.getRollNo()){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
 
 
     //1. Create a java class and add two numbers inside main method and show the result

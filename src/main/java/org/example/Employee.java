@@ -1,5 +1,8 @@
 package org.example;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Employee {   // Class name should always start with a capital letter
 
     private String empId; // variable should be in camelcase
@@ -7,7 +10,17 @@ public class Employee {   // Class name should always start with a capital lette
     private String designation;
     private double salary;
 
+    private Date doj;
+
     private int hoursWorked;
+
+    public Employee(String empId, String empName, String designation, double salary, Date doj) {
+        this.empId = empId;
+        this.empName = empName;
+        this.designation = designation;
+        this.salary = salary;
+        this.doj = doj;
+    }
 
     public int getHoursWorked() {
         return hoursWorked;
@@ -68,6 +81,13 @@ public class Employee {   // Class name should always start with a capital lette
                 ", empName='" + empName + '\'' +
                 ", designation='" + designation + '\'' +
                 ", salary=" + salary +
+                ", doj=" + new SimpleDateFormat("dd-MM-yyyy").format(doj) +
                 '}';
     }
 }
+
+// File I/O: Standard IO, FileInputStream, FileOutputStream, BufferedReader,
+// Serialization, Marker Interfaces
+// How to read csv file and save data in java object
+// How to parse String to Date ?
+// How to format Date to String ?
