@@ -2,13 +2,14 @@ package com.training.thread;
 
 public class ThreadImpl {
     public static void main(String... args){
-        new ThreadDemo1();
-
+        //new ThreadDemo2();
+        new ThreadDemo3("ONE");
+        new ThreadDemo3("TWO");
+        new ThreadDemo3("THREE");
         try{
-            for (int i = 1; i < 6; i++) {
-                System.out.println("Main thread: " + i);
-                Thread.sleep(2000);
-            }
+
+                Thread.sleep(1000);
+
         }
         catch(InterruptedException e){
             e.printStackTrace();
@@ -17,3 +18,4 @@ public class ThreadImpl {
         System.out.println("Main Thread Exiting....");
     }
 }
+
