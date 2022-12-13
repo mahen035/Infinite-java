@@ -24,3 +24,6 @@ public class ThreadDemo1 implements Runnable{
 
     }
 }
+
+// Whole thread concept
+// Inter Thread communication

@@ -20,3 +20,4 @@ public class ThreadInfo {
 // There are two ways to create thread
 //1. By Implementing Runnable interface
 //2. By extending Thread class
+//3. Synchronization
